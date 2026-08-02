@@ -1,0 +1,29 @@
+/* Copyright 2026 上海如静知华信息科技有限公司 */
+export const domain={
+ code:'AIGOV',systemName:'知华 AI 治理平台',englishName:'AI GOVERNANCE CONTROL CENTER',theme:{primary:'#4b5fb8',dark:'#222a46',accent:'#c6923b'},
+ workspace:'数字治理办公室 / AI 治理委员会',fieldWorkspace:'AI 风险评审组',period:'2026-08-02 · 月度评审',liveText:'治理台账于 10:36 更新',fieldContextLabel:'当前评审批次',fieldContext:'八月上线窗口',fieldUser:'陆遥',fieldRole:'AI 风险评审员',adminUser:'何谨',adminRole:'AI 治理负责人',
+ adminTitle:'企业 AI 治理控制中心',adminBreadcrumb:'AI 治理 / 风险态势',adminSubtitle:'统一管理 AI 系统台账、风险分级、评测证据、控制措施和上线决策。',exportAction:'导出治理月报',createAction:'发起系统评审',
+ chartTitle:'治理控制项完成趋势',chartSubtitle:'本月实际完成率 / 上线门禁目标',chartLabels:['01日','05日','09日','13日','17日','21日','25日','29日','31日'],loadTitle:'治理领域负荷',loadSubtitle:'待评审控制项占团队处理能力',recordsTitle:'重点 AI 系统评审',recordsSubtitle:'按风险等级、上线窗口与证据缺口排序',issueTitle:'治理委员会关注事项',issueSubtitle:'需要业务、法务、安全共同决策的风险',
+ recordName:'评审任务',itemName:'AI 系统',unitName:'责任团队',batchName:'风险等级',planName:'控制项',doneName:'已完成',exceptionName:'证据缺口',unitLabel:'项',
+ listBreadcrumb:'治理工作台 / 系统评审',listSubtitle:'覆盖登记、风险分级、数据治理、模型评测、人工监督和运行复评。',listSummary:[['在管系统','68'],['本月评审','14'],['待补证据','9'],['高风险待决策','3',true]],tabs:['全部','待分级','评审中','待决策','已归档'],
+ fieldBreadcrumb:'AI 治理 / 评审员工作台',fieldTitle:'AI 风险评审工作台',fieldSubtitle:'当前 6 个评审任务 · 3 个高风险系统 · 评审员陆遥',fieldSecondary:'查看评审日历',reportAction:'提交评审意见',fieldNoticeTitle:'治理证据库运行正常',fieldNotice:'模型卡、数据卡和评测报告完整率 93.8%',
+ steps:['系统登记','风险分级','控制评审','委员会决策','运行复评'],documentAction:'查看治理手册',printAction:'导出评审档案',resourceCardTitle:'治理控制状态',resourceValueLabel:'有效控制项',resourceHealthLabel:'证据完整率',quickSubtitle:'评审员常用入口',quickActions:[['评审意见','/shopfloor/report','结论、缺口与整改建议'],['系统台账','/shopfloor/material','用途、模型、数据与责任人'],['证据中心','/shopfloor/resources','模型卡、数据卡和评测报告'],['风险升级','/shopfloor/andon','高风险、重大变更与运行事件']],
+ reportDefaults:[6,1],reportTitle:'AI 系统评审反馈',reportSubtitle:'记录已验证控制项、证据缺口和上线建议。',reportSuccess:'评审意见已写入治理档案',reportPlaceholder:'填写风险判断、证据引用、整改要求与上线条件',reportFootnote:'提交后自动进入治理负责人复核队列',ruleTitle:'上线治理门禁',ruleSubtitle:'AI-GOV-POLICY · V2.1',rules:[['系统责任人','必须明确'],['高风险人工复核','必须启用'],['模型评测','上线前完成'],['运行复评','每季度',true]],fieldTotals:[['68','在管 AI 系统'],['3','高风险待决策'],['9','待补证据'],['93.8%','证据完整率']],
+ adminMenus:[['/admin','home','治理控制中心'],['/admin/work-orders','order','系统评审'],['/admin/samples','box','AI 系统台账'],['/admin/schedule','calendar','评审计划'],['/admin/methods','process','政策与控制'],['/admin/reviews','quality','委员会决策'],['/admin/resources','machine','证据中心'],['/admin/report','chart','治理分析']],
+ fieldMenus:[['/shopfloor','home','评审员工作台'],['/shopfloor/report','report','评审反馈'],['/shopfloor/tasks','order','我的任务'],['/shopfloor/material','box','系统台账'],['/shopfloor/resources','machine','证据中心'],['/shopfloor/andon','risk','风险升级',3]],
+ moduleTitles:{tasks:['我的评审任务','查看风险等级、上线期限与证据状态'],material:['AI 系统台账','查询用途、模型版本、数据来源与责任人'],resources:['治理证据中心','管理模型卡、数据卡、评测报告和审批记录'],andon:['风险升级','提交高风险或重大变更的委员会决策'],samples:['AI 系统台账','统一登记业务用途、能力边界和上下游依赖'],schedule:['评审计划','协调评审人、业务方和上线窗口'],methods:['政策与控制','维护风险分级规则和上线控制要求'],reviews:['委员会决策','记录有条件通过、驳回和复评要求'],report:['治理分析','分析系统风险、证据完整率和整改周期']},
+ tagline:'让每一个 AI 系统可登记、可解释、可问责',storyTitle:'创新可以更快，<br/>但上线边界必须清楚。',storyText:'把政策要求转化为可执行控制和可核验证据的企业 AI 治理工作台。',pattern:[2,4,7,9,12,15,18,21,24,27,29,31],loginStats:[['68','在管 AI 系统'],['93.8%','证据完整率'],['3','高风险待决策']],loginTitle:'企业 AI 治理控制中心',adminDemo:'台账 / 控制 / 决策',fieldDemo:'评审 / 证据 / 整改'
+}
+export const records=[
+ {no:'GOV-260801-018',name:'授信材料智能审阅上线评估',code:'AI-CREDIT-ASSIST',unit:'AI 风险评审组',group:'数字治理办公室',plan:24,done:16,exception:3,due:'08-03',batch:'高风险 R2',status:'评审中',progress:67,priority:'加急'},
+ {no:'GOV-260801-021',name:'人力资源知识助手治理评审',code:'AI-HR-COPILOT',unit:'数据与隐私组',group:'数据治理中心',plan:18,done:8,exception:2,due:'08-04',batch:'中风险 R1',status:'补充证据',progress:44,priority:'关注'},
+ {no:'GOV-260802-006',name:'销售跟进 Agent 自主性复核',code:'AI-SALES-AGENT',unit:'AI 风险评审组',group:'数字治理办公室',plan:12,done:0,exception:0,due:'08-06',batch:'高风险 R3',status:'待评审',progress:12,priority:'加急'},
+ {no:'GOV-260728-015',name:'内部文档检索助手年度复评',code:'AI-DOC-SEARCH',unit:'模型验证组',group:'AI 工程中心',plan:20,done:20,exception:1,due:'08-01',batch:'低风险 R1',status:'已归档',progress:100,priority:'正常'},
+ {no:'GOV-260802-009',name:'营销内容生成服务透明度评审',code:'AI-MKT-CONTENT',unit:'数据与隐私组',group:'数据治理中心',plan:16,done:11,exception:2,due:'08-05',batch:'中风险 R2',status:'待决策',progress:76,priority:'关注'}]
+export const resources=[{code:'CTRL-DATA-03',name:'数据来源与授权控制',unit:'数据治理中心',status:'有效',health:94,value:'42',valueUnit:'项',note:'覆盖个人信息和知识产权证据'},{code:'CTRL-EVAL-02',name:'模型效果与偏差评测',unit:'AI 工程中心',status:'复核中',health:81,value:'36',valueUnit:'项',note:'2 个评测集等待版本确认'},{code:'CTRL-HUMAN-05',name:'关键决策人工复核',unit:'数字治理办公室',status:'预警',health:72,value:'18',valueUnit:'项',note:'1 个系统尚未配置停止机制'}]
+export const reviews=[{no:'DEC-260801-032',title:'授信助手高风险上线决策',type:'委员会决策',detail:'6 项条件 · 何谨',result:'待确认'},{no:'DEC-260801-011',title:'知识助手数据来源复核',type:'合规复核',detail:'18 份证据 · 陆遥',result:'通过'},{no:'DEC-260728-018',title:'销售 Agent 人工监督检查',type:'控制验证',detail:'缺口 2 项',result:'异常'}]
+export const adminMetrics=[['在管 AI 系统','68','较上月新增 6 个','blue'],['本月评审','14','平均周期 6.2 天','green'],['待补治理证据','9','其中 3 项临近上线','orange'],['高风险待决策','3','需委员会审议','red']]
+export const fieldMetrics=[['我的评审','6','3 个高风险系统','blue'],['今日已核验','18','控制项与证据','green'],['待补证据','9','3 项临近期限','orange'],['证据完整率','93.8%','较上周提升 2.4%','slate']]
+export const chartActual=[18,26,37,45,56,63,72,81,87],chartTarget=[20,30,40,50,60,70,80,90,96]
+export const loads=[['数据与隐私治理',86,'开放评审 8 个'],['模型效果与偏差',78,'开放评审 6 个'],['安全与鲁棒性',72,'开放评审 5 个'],['透明度与人工监督',64,'开放评审 4 个']]
+export const issues=[{type:'决策',title:'授信助手缺少拒绝结果申诉流程',detail:'影响外部客户 · 上线窗口 08-06',status:'待审议'},{type:'证据',title:'销售 Agent 自主调用边界未验证',detail:'涉及 CRM 写操作 3 项',status:'补充中'},{type:'变更',title:'知识助手基础模型版本将切换',detail:'需触发重大变更复评',status:'待启动'}]

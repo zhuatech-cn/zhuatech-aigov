@@ -62,3 +62,7 @@ npm run dev:demo
 | ![知华科技微信二维码一](docs/images/zhuatech-wechat-consulting.png) | ![知华科技微信二维码二](docs/images/zhuatech-wechat-consulting-2.png) |
 
 SEO：AI 治理平台、AI Governance、模型风险管理、AI 系统台账、算法治理、Java AI 治理源码、Vue 管理系统、知华科技。
+
+## 人工监督就绪度
+
+新增 `POST /api/aigov/insights/human-oversight-readiness`。面向高影响 AI 场景，检查人工复核、可解释性、持续监控、回滚机制和责任人配置，形成监督完备度评分并返回 `APPROVE`、`REVIEW` 或 `BLOCK`，用于上线评审和治理证据留存。

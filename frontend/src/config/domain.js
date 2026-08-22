@@ -1,4 +1,4 @@
-/* Copyright 2026 上海如静知华信息科技有限公司 */
+/* Copyright 2026 上海如静知华信息科技有限公司 · https://www.zhuatech.cn/ */
 export const domain={
  code:'AIGOV',systemName:'知华 AI 治理平台',englishName:'AI GOVERNANCE CONTROL CENTER',theme:{primary:'#4b5fb8',dark:'#222a46',accent:'#c6923b'},
  workspace:'数字治理办公室 / AI 治理委员会',fieldWorkspace:'AI 风险评审组',period:'2026-08-02 · 月度评审',liveText:'治理台账于 10:36 更新',fieldContextLabel:'当前评审批次',fieldContext:'八月上线窗口',fieldUser:'陆遥',fieldRole:'AI 风险评审员',adminUser:'何谨',adminRole:'AI 治理负责人',
